@@ -1,0 +1,19 @@
+{
+  "name": "phonecatalogapp",
+  "version": "1.0.0",
+  "description": "Product Catalog App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mluena/PhoneCatalogApp.git"
+  },
+  "author": "María",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mluena/PhoneCatalogApp/issues"
+  },
+  "homepage": "https://github.com/mluena/PhoneCatalogApp#readme"
+}

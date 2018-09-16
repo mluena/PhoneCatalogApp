@@ -1,0 +1,37 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+import { connect } from "react-redux";
+
+class UnconnectedPhoneDetail extends React.Component {
+	render() {
+		return (
+            <div className="detail__view-wrapper">
+            
+                <Link to='/'><button className="menu-btn"></button></Link>
+                <div style={{backgroundImage:`url(${this.props.url})`}}></div>
+                <img className="main-img" src={this.props.url} />
+            </div>
+           
+		);
+	}
+}
+
+const defaultphone = 'https://www.lifewire.com/thmb/qLv10Pgd30kCy7OxXacwOWKxZ8M=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/shutterstock_325494917-5a68d8403418c600190a3e1f.jpg'
+
+const mapStateToProps = (state, ownProps) => {
+
+    // this.props.match.params.phoneId
+    // ownProps.match.params.phoneId
+    const phone = state.phones.find(phone => {
+        return phone.id === parseInt(ownProps.match.params.phoneId)
+    })
+
+	return {
+		url: phone ? phone.url : defaultphone
+	}
+}
+
+const connection = connect(mapStateToProps);
+const phoneDetail = connection(UnconnectedPhoneDetail);
+
+export default phoneDetail;
