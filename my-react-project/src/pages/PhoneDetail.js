@@ -9,7 +9,8 @@ class UnconnectedPhoneDetail extends React.Component {
             
                 <Link to='/'><button className="menu-btn"></button></Link>
                 <div style={{backgroundImage:`url(${this.props.url})`}}></div>
-                <img className="main-img" src={this.props.url} />
+                <p>{this.props.description}</p>
+                <img className="main-img" alt={this.props.url} src={this.props.url} />
             </div>
            
 		);
@@ -27,7 +28,7 @@ const mapStateToProps = (state, ownProps) => {
     })
 
 	return {
-		url: phone ? phone.url : defaultPhone
+		description: phone ? phone.description : defaultPhone
 	}
 }
 

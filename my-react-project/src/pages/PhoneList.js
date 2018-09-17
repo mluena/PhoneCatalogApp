@@ -14,6 +14,7 @@ class UnconnectedPhoneList extends React.Component {
 			url: PropTypes.string.isRequired,
 			title: PropTypes.string.isRequired,
 			description: PropTypes.string.isRequired,
+			price: PropTypes.number.isRequired
 		})).isRequired
 	}
 
@@ -32,6 +33,7 @@ class UnconnectedPhoneList extends React.Component {
 				url={phone.url}
 				title={phone.title}
 				description={phone.description}
+				price={phone.price}
 				selection={() => {
 					this.props.history.push(`/detail-view/${phone.id}`)
 				}}

@@ -9,14 +9,14 @@ const ACTION_TYPES = {
     SORT_PHONES_DESCENDING: 'SORT_PHONES_DESCENDING',
 }
 
-function comparStrings(str1, str2) {
-    if (str1 === str2) {
+function comparePrices(price1, price2) {
+    if (price1 === price2) {
         return 0
     }
-    if (str1 < str2) {
+    if (price1 < price2) {
         return -1
     }
-    if (str1 > str2) {
+    if (price1 > price2) {
         return 1
     }
 }
@@ -32,14 +32,14 @@ export function phonesReducer(state = initialState, action) {
         case ACTION_TYPES.SORT_PHONES_ASCENDING: {
             return {
                 ...state,
-                phones: [...state.phones].sort((a, b) => comparStrings(a.title, b.title)),
+                phones: [...state.phones].sort((a, b) => comparePrices(a.price, b.price)),
                 sortDirection: "ASC"
             }
         }
         case ACTION_TYPES.SORT_PHONES_DESCENDING: {
             return {
                 ...state,
-                phones: [...state.phones].sort((a, b) => comparStrings(b.title, a.title)),
+                phones: [...state.phones].sort((a, b) => comparePrices(b.price, a.price)),
                 sortDirection: "DESC"
             }
         }
