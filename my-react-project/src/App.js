@@ -4,12 +4,12 @@ import PhoneList from './pages/PhoneList';
 import PhoneDetail from './pages/PhoneDetail';
 import { fetchPhonesFulfilled } from "./redux/phones";
 import { connect } from "react-redux";
-import './App.css';
+import './css/main.css';
 
 
 class UnConnectedApp extends React.Component {
 	componentDidMount () {
-		fetch ('https://jsonplaceholder.typicode.com/phones')
+		fetch ('http://localhost:3000/phones')
 			.then(response => response.json())
 			.then(json => {
 				this.props.dispatch(fetchPhonesFulfilled(json))

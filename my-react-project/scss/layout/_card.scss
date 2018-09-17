@@ -1,0 +1,36 @@
+.card-container {
+    border: 1.5px solid yellow;
+    width: 262.5px;
+    height: 310px;
+    padding: 20px 20px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.img-title {
+    padding: 0 0 10px;
+    margin: 0;
+    border-bottom: 1px solid grey;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.phone-img {
+    width: 170px;
+    height: 150px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+}
+
+.purchase-btn {
+    background-color: green;
+    color: white;
+    border-color: darkGreen;
+}
+
+.description {
+    text-align: center;
+    padding-top: 20px;
+}

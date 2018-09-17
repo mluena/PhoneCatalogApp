@@ -4,7 +4,7 @@ var sass = require('gulp-sass');
 gulp.task('default', function () {
   gulp.src('scss/main.scss') // Leo el archivo scss
     .pipe(sass()) // Convierto el contenido del archivo index.scss a CSS
-    .pipe(gulp.dest('public/css')); // El CSS generado lo guardamos en la carpeta css
+    .pipe(gulp.dest('src/css')); // El CSS generado lo guardamos en la carpeta css
 });
 
 // Tarea que observa cambios en 'scss'

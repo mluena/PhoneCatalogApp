@@ -1,0 +1,84 @@
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+  -webkit-user-select: none;
+  /* for button */
+  -webkit-appearance: button;
+  /* for input */
+  -moz-user-select: none;
+  -ms-user-select: none; }
+
+* {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  font-family: montserratFont; }
+
+.grid-wrapper {
+  margin: 20px 80px 20px 80px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 20px; }
+
+.App {
+  text-align: center; }
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px; }
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white; }
+
+.App-title {
+  font-size: 1.5em; }
+
+.App-intro {
+  font-size: large; }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
+.card-container {
+  border: 1.5px solid yellow;
+  width: 262.5px;
+  height: 310px;
+  padding: 20px 20px 0;
+  display: flex;
+  flex-direction: column; }
+
+.img-title {
+  padding: 0 0 10px;
+  margin: 0;
+  border-bottom: 1px solid grey;
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  text-transform: uppercase; }
+
+.phone-img {
+  width: 170px;
+  height: 150px;
+  padding-top: 10px;
+  padding-bottom: 5px; }
+
+.purchase-btn {
+  background-color: green;
+  color: white;
+  border-color: darkGreen; }
+
+.description {
+  text-align: center;
+  padding-top: 20px; }

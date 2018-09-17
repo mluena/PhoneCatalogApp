@@ -2,36 +2,36 @@ import React from 'react';
 import Card from '../components/Card';
 import PropTypes from 'prop-types';
 import { connect } from "react-redux";
-import { sortphonesAscending, sortphonesDescending } from "../redux/phones";
+import { sortPhonesAscending, sortPhonesDescending } from "../redux/phones";
 
-// sortphonesAscending
-// sortphonesDescending
+// sortPhonesAscending
+// sortPhonesDescending
 
-class UnconnectedphoneList extends React.Component {
+class UnconnectedPhoneList extends React.Component {
 	static propTypes = {
 		phones: PropTypes.arrayOf(PropTypes.shape({
 			id: PropTypes.number.isRequired,
 			url: PropTypes.string.isRequired,
 			title: PropTypes.string.isRequired,
-			thumbnailUrl: PropTypes.string.isRequired,
+			description: PropTypes.string.isRequired,
 		})).isRequired
 	}
 
 	onSort = () => {
 		if (this.props.sortDirection === "ASC") {
-			this.props.dispatch(sortphonesDescending())
+			this.props.dispatch(sortPhonesDescending())
 		} else {
-			this.props.dispatch(sortphonesAscending())
+			this.props.dispatch(sortPhonesAscending())
 		}
 	}
 
-	renderphone (phone) {
+	renderPhone (phone) {
 		return (
 			<Card
 				key={phone.id}
 				url={phone.url}
 				title={phone.title}
-				thumbnailUrl={phone.thumbnailUrl}
+				description={phone.description}
 				selection={() => {
 					this.props.history.push(`/detail-view/${phone.id}`)
 				}}
@@ -41,10 +41,10 @@ class UnconnectedphoneList extends React.Component {
 	
 	render() {
 		return(
-			<div className="grid-wrapper">
+			<div className="phones__main-container">
 				<button type="button" className="sort-btn" onClick={this.onSort}></button>
-				<ul className="phones__main-container">
-					{this.props.phones.map((phone) => this.renderphone(phone))}
+				<ul className="grid-wrapper">
+					{this.props.phones.map((phone) => this.renderPhone(phone))}
 				</ul>
 			</div>
 		);
@@ -59,6 +59,6 @@ const mapStateToProps = (state) => {
 }
 
 const connection = connect(mapStateToProps);
-const phoneList = connection(UnconnectedphoneList);
+const PhoneList = connection(UnconnectedPhoneList);
 
-export default phoneList;
+export default PhoneList;

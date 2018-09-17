@@ -50,20 +50,20 @@ export function phonesReducer(state = initialState, action) {
 }
 
 
-export function fetchphonesFulfilled(phones) {
+export function fetchPhonesFulfilled(phones) {
     return {
         type: ACTION_TYPES.FETCH_PHONES_FULFILLED,
         phones
     }
 }
 
-export function sortphonesAscending() {
+export function sortPhonesAscending() {
     return {
         type: ACTION_TYPES.SORT_PHONES_ASCENDING
     }
 }
 
-export function sortphonesDescending() {
+export function sortPhonesDescending() {
     return {
         type: ACTION_TYPES.SORT_PHONES_DESCENDING
     }

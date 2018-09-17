@@ -16,22 +16,22 @@ class UnconnectedPhoneDetail extends React.Component {
 	}
 }
 
-const defaultphone = 'https://www.lifewire.com/thmb/qLv10Pgd30kCy7OxXacwOWKxZ8M=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/shutterstock_325494917-5a68d8403418c600190a3e1f.jpg'
+const defaultPhone = 'https://www.lifewire.com/thmb/qLv10Pgd30kCy7OxXacwOWKxZ8M=/768x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/shutterstock_325494917-5a68d8403418c600190a3e1f.jpg'
 
 const mapStateToProps = (state, ownProps) => {
 
-    // this.props.match.params.phoneId
-    // ownProps.match.params.phoneId
+    // this.props.match.params.photoId
+    // ownProps.match.params.photoId
     const phone = state.phones.find(phone => {
         return phone.id === parseInt(ownProps.match.params.phoneId)
     })
 
 	return {
-		url: phone ? phone.url : defaultphone
+		url: phone ? phone.url : defaultPhone
 	}
 }
 
 const connection = connect(mapStateToProps);
-const phoneDetail = connection(UnconnectedPhoneDetail);
+const PhoneDetail = connection(UnconnectedPhoneDetail);
 
-export default phoneDetail;
+export default PhoneDetail;
