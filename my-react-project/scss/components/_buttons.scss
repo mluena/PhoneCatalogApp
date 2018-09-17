@@ -15,10 +15,18 @@ button {
     -ms-user-select: none;
 }
 
+.purchase-btn,
+.menu-btn,
 .sort-btn {
-    width: 100px;
+    width: 150px;
     height: 35px;
     background-color: green;
-    boder: 1px solid darkGreen;
+    border: 1px solid darkGreen;
+    margin: auto;
     color: white;
 }
+
+.purchase-btn {
+    width: 100%;  
+}
+

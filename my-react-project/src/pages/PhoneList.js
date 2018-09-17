@@ -44,10 +44,10 @@ class UnconnectedPhoneList extends React.Component {
 	render() {
 		return(
 			<div className="phones__main-container">
-				<button type="button" className="sort-btn" onClick={this.onSort}></button>
 				<ul className="grid-wrapper">
 					{this.props.phones.map((phone) => this.renderPhone(phone))}
 				</ul>
+				<button type="button" className="sort-btn" onClick={this.onSort}>Ordena por precio</button>
 			</div>
 		);
 	}

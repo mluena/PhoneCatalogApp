@@ -13,7 +13,7 @@ class Card extends React.Component {
 			<li className="card-container" onClick={this.props.selection}>
 				<h2 className="img-title">{this.props.title}</h2>
 				<img className="phone-img" alt={`${this.props.title}`} src={`${this.props.url}`}/>
-				<button className="purchase-btn">Comprar</button>
+				<button className="purchase-btn">+ info</button>
 				<p className="price">{this.props.price}</p>
 			</li>
 		);

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
 button {
   background: none;
   border: 0;
@@ -14,18 +15,31 @@ button {
   -moz-user-select: none;
   -ms-user-select: none; }
 
+.purchase-btn,
+.menu-btn,
 .sort-btn {
-  width: 100px;
+  width: 150px;
   height: 35px;
   background-color: green;
-  boder: 1px solid darkGreen;
+  border: 1px solid darkGreen;
+  margin: auto;
   color: white; }
+
+.purchase-btn {
+  width: 100%; }
+
+.detail__view-wrapper {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around; }
 
 * {
   margin: auto;
   padding: 0px;
   overflow: hidden;
-  font-family: montserratFont; }
+  font-family: mainFont; }
 
 .grid-wrapper {
   margin: 20px 80px 20px 80px;
@@ -39,7 +53,8 @@ button {
   padding: 20px;
   color: white;
   display: flex;
-  align-content: space-around; }
+  align-content: space-around;
+  border-bottom: 4px solid yellow; }
 
 .app-logo {
   height: 80px; }
@@ -70,11 +85,11 @@ button {
   padding-top: 10px;
   padding-bottom: 5px; }
 
-.purchase-btn {
-  background-color: green;
-  color: white;
-  border-color: darkGreen; }
-
 .description {
-  text-align: center;
-  padding-top: 20px; }
+  color: white;
+  width: 500px;
+  font-size: 27px; }
+
+.price {
+  font-weight: bold;
+  font-size: 18px; }

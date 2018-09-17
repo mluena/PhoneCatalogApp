@@ -6,11 +6,10 @@ class UnconnectedPhoneDetail extends React.Component {
 	render() {
 		return (
             <div className="detail__view-wrapper">
-            
-                <Link to='/'><button className="menu-btn"></button></Link>
-                <div style={{backgroundImage:`url(${this.props.url})`}}></div>
-                <p>{this.props.description}</p>
-                <img className="main-img" alt={this.props.url} src={this.props.url} />
+                <Link to='/'><button className="menu-btn">Volver</button></Link>
+                <div className="detail-wrapper">
+                    <p className="description">{this.props.description}</p>
+                </div>
             </div>
            
 		);
