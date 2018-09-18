@@ -1,5 +1,7 @@
 FROM node
-COPY ./package.json .
-RUN npm install
-COPY ./server.js .
-CMD node server.js
+
+RUN npm install -g http-server
+
+COPY ./build ./build
+
+CMD hs ./build

@@ -1,6 +1,11 @@
-api:  
-     build: .  
-     volumes:    
-         - "./api:/src/"  
-     ports:    
-         - "80:5000"
+version: '2'
+
+services:
+  backend:
+    image: backend:1.0.0
+    ports:
+      - 5000:5000
+  frontend:
+    image: frontend:1.0.0
+    ports:
+      - 3000:8080

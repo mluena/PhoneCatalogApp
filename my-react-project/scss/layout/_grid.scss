@@ -16,7 +16,6 @@
 @media all and (max-width: 800px) {
 	.grid-wrapper {
         grid-template-columns: 1fr;
-        overflow-x: hidden;
-        overflow-y: auto;
+        cursor: pointer;
 	}
 }

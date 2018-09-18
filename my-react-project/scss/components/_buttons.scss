@@ -32,3 +32,6 @@ button {
     width: 100%;  
 }
 
+@media all and (max-width: 490px) {
+    display: none;
+}
