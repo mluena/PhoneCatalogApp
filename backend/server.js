@@ -46,6 +46,14 @@ app.get('/api/phones', (request, response) => {
         title: "Móvil Xiaomi Redmi 5 32GB - NegroMOVIL ",
         url: "https://static.carrefour.es/hd_510x_/crs/cdn_static/catalog/hd/862518_00_1.jpg",
         price: "307€"
+      },
+      {
+        phoneId: 6,
+        id: 6,
+        description: "Tamaño de Pantalla:14,47 cm - 5,7'' Resolución cámara trasera:12 Mpx Resolución cámara delantera:5 Mpx Procesador (núcleos):8 Núcleos Almacenamiento (ROM):32 Gb Memoria RAM:3 Gb Sistema Operativo:ANDROID Capacidad batería:3150 mAh",
+        title: "SAMSUNG GALAXY S9 G960 DS 64GB VIOLETA",
+        url: "https://gloimg.gbtcdn.com/soa/gb/pdm-product-pic/Electronic/2018/06/08/goods-img/1528449705639448901.jpg",
+        price: "792€"
       }
     ]);
   });
