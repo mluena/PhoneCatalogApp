@@ -1,6 +1,8 @@
 Catalogo para móviles
 
-To start:
+
+
+Arrancar:
 
 PhoneCatalogApp/backend 
 
