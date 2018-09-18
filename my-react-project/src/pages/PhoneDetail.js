@@ -7,6 +7,7 @@ class UnconnectedPhoneDetail extends React.Component {
 		return (
             <div className="detail__view-wrapper">
                 <Link to='/'><button className="menu-btn">Volver</button></Link>
+                <h1 className="app-title">Especificaciones técnicas</h1>
                 <div className="detail-wrapper">
                     <p className="description">{this.props.description}</p>
                 </div>
