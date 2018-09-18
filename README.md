@@ -1,16 +1,20 @@
-**Catalogo para móviles
+<h1>Catalogo para móviles</h1>
 
 
 
 Arrancar:
 
-PhoneCatalogApp/backend 
+<h2>PhoneCatalogApp/backend</h2>
 
-1 npm install
-2 node server
-
-
-PhoneCatalogApp/my-react-project
 
 npm install
+
+node server
+
+
+<h2>PhoneCatalogApp/my-react-project</h2>
+
+
+npm install
+
 npm start
