@@ -15,6 +15,6 @@ node server
 <h2>PhoneCatalogApp/my-react-project</h2>
 
 
-npm install
+npm install -- save react react-dom redux react-redux gulp-install react-router
 
 npm start
