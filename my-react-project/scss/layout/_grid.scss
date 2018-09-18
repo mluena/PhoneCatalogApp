@@ -7,15 +7,21 @@
 }
 
 @media all and (max-width: 1120px) {
-	.grid-wrapper {
-        grid-template-columns: repeat(2, 1fr);
-        overflow-x: hidden;
-        overflow-y: auto;
+        .grid-wrapper {
+                grid-template-columns: repeat(2, 1fr);
+                overflow-x: hidden;
+                overflow-y: auto;
 	}
 }
 @media all and (max-width: 800px) {
 	.grid-wrapper {
-        grid-template-columns: 1fr;
-        cursor: pointer;
+                grid-template-columns: 1fr;
+                cursor: pointer;
 	}
+}
+
+@media all and (max-width: 490px) {
+        .grid-wrapper {
+                overflow-y: hidden;
+                }
 }

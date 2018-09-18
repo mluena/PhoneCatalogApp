@@ -153,6 +153,10 @@ body {
     grid-template-columns: 1fr;
     cursor: pointer; } }
 
+@media all and (max-width: 490px) {
+  .grid-wrapper {
+    overflow-y: hidden; } }
+
 .card-container {
   border: 1.5px solid yellow;
   width: 262.5px;
