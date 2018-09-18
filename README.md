@@ -1,12 +1,20 @@
-Catalogo para móviles
+<h1>Catalogo para móviles</h1>
 
-To start:
 
-PhoneCatalogApp/backend 
+
+Arrancar:
+
+<h2>PhoneCatalogApp/backend</h2>
+
+
+npm install
 
 node server
 
 
-PhoneCatalogApp/my-react-project
+<h2>PhoneCatalogApp/my-react-project</h2>
+
+
+npm install -- save react react-dom redux react-redux gulp-install react-router
 
 npm start
