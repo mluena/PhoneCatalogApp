@@ -14,7 +14,7 @@ class UnconnectedPhoneList extends React.Component {
 			url: PropTypes.string.isRequired,
 			title: PropTypes.string.isRequired,
 			description: PropTypes.string.isRequired,
-			price: PropTypes.number.isRequired
+			price: PropTypes.string.isRequired
 		})).isRequired
 	}
 

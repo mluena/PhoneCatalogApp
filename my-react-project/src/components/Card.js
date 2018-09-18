@@ -6,7 +6,7 @@ class Card extends React.Component {
 		title: PropTypes.string.isRequired,
 		selection: PropTypes.func.isRequired,
 		description: PropTypes.string.isRequired,
-		price: PropTypes.number.isRequired
+		price: PropTypes.string.isRequired
 	}
 	render() {
 		return(
