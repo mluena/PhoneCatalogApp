@@ -29,6 +29,9 @@ button {
 .purchase-btn {
   width: 100%; }
 
+body {
+  font-family: "Lato", sans-serif; }
+
 .detail__view-wrapper {
   background-color: black;
   height: 100vh;
@@ -39,8 +42,7 @@ button {
 * {
   margin: auto;
   padding: 0px;
-  overflow: hidden;
-  font-family: mainFont; }
+  overflow: hidden; }
 
 .grid-wrapper {
   margin: 20px 80px 20px 80px;
